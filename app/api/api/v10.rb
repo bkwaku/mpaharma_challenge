@@ -7,6 +7,7 @@ module Api
     content_type :json, 'application/json'
 
     mount ::Api::V10::CategoriesApi
+    mount ::Api::V10::DiagnosisApi
 
   end
 end

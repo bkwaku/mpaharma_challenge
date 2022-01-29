@@ -129,7 +129,7 @@ RSpec.describe Api::V10::CategoriesApi, type: :request do
     end
   end
 
-  describe 'DELETE api/v1.0/segment_folders/:id' do
+  describe 'DELETE api/v1.0/categories/:id' do
     subject(:dispatch_request) do
       dispatch :delete
       response
