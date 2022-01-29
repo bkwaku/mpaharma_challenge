@@ -27,6 +27,9 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Configatron makes configuring application incredibly easy
+gem 'configatron'
+
 # Use grape for REST API
 gem 'grape'
 gem 'grape-entity'
@@ -36,6 +39,13 @@ gem 'grape-papertrail', git: 'https://github.com/catalystio/grape-papertrail'
 gem 'grape-swagger'
 gem 'grape-swagger-entity'
 gem 'json_refs'
+gem 'grape_on_rails_routes'
+gem 'kaminari', '~> 1.2.1'
+gem 'api-pagination'
+
+# logging
+gem 'grape_logging'
+gem 'lograge'
 
 # Rspec for testing
 gem 'factory_bot_rails' # Factories!
