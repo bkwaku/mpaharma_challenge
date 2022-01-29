@@ -37,6 +37,10 @@ gem 'grape-swagger'
 gem 'grape-swagger-entity'
 gem 'json_refs'
 
+# Rspec for testing
+gem 'factory_bot_rails' # Factories!
+gem 'rspec-rails'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
