@@ -27,6 +27,16 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Use grape for REST API
+gem 'grape'
+gem 'grape-entity'
+gem 'grape-jsonapi'
+gem 'grape_on_rails_routes'
+gem 'grape-papertrail', git: 'https://github.com/catalystio/grape-papertrail'
+gem 'grape-swagger'
+gem 'grape-swagger-entity'
+gem 'json_refs'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

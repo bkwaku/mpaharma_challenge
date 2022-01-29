@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/catalystio/grape-papertrail
+  revision: 6469e63772cce830decb70b221800461101c6910
+  specs:
+    grape-papertrail (0.1.2.1)
+      nokogiri (~> 1.6, >= 1.6.6.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -88,9 +95,48 @@ GEM
       irb (>= 1.3.6)
       reline (>= 0.2.7)
     digest (3.1.0)
+    dry-configurable (0.14.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.6)
+    dry-container (0.9.0)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.13, >= 0.13.0)
+    dry-core (0.7.1)
+      concurrent-ruby (~> 1.0)
+    dry-inflector (0.2.1)
+    dry-logic (1.2.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.5, >= 0.5)
+    dry-types (1.5.1)
+      concurrent-ruby (~> 1.0)
+      dry-container (~> 0.3)
+      dry-core (~> 0.5, >= 0.5)
+      dry-inflector (~> 0.1, >= 0.1.2)
+      dry-logic (~> 1.0, >= 1.0.2)
     erubi (1.10.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
+    grape (1.6.2)
+      activesupport
+      builder
+      dry-types (>= 1.1)
+      mustermann-grape (~> 1.0.0)
+      rack (>= 1.3.0)
+      rack-accept
+    grape-entity (0.10.1)
+      activesupport (>= 3.0.0)
+      multi_json (>= 1.3.2)
+    grape-jsonapi (1.0.1)
+      grape
+      jsonapi-serializer
+    grape-swagger (1.4.2)
+      grape (~> 1.3)
+    grape-swagger-entity (0.5.1)
+      grape-entity (>= 0.6.0)
+      grape-swagger (>= 1.2.0)
+    grape_on_rails_routes (0.3.2)
+      rails (>= 3.1.1)
+    hana (1.3.7)
     i18n (1.9.1)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.0.2)
@@ -103,6 +149,10 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    json_refs (0.1.7)
+      hana
+    jsonapi-serializer (2.2.0)
+      activesupport (>= 4.2)
     loofah (2.13.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -115,6 +165,11 @@ GEM
     mini_portile2 (2.7.1)
     minitest (5.15.0)
     msgpack (1.4.4)
+    multi_json (1.15.0)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    mustermann-grape (1.0.1)
+      mustermann (>= 1.0.0)
     net-imap (0.2.3)
       digest
       net-protocol
@@ -140,6 +195,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
+    rack-accept (0.4.5)
+      rack (>= 0.4)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (7.0.1)
@@ -173,6 +230,7 @@ GEM
     reline (0.3.1)
       io-console (~> 0.5)
     rexml (3.2.5)
+    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.1.0)
       childprocess (>= 0.5, < 5.0)
@@ -218,8 +276,16 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  grape
+  grape-entity
+  grape-jsonapi
+  grape-papertrail!
+  grape-swagger
+  grape-swagger-entity
+  grape_on_rails_routes
   importmap-rails
   jbuilder
+  json_refs
   pg
   puma (~> 5.0)
   rails (~> 7.0.1)
