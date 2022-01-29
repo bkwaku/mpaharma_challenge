@@ -40,6 +40,9 @@ gem 'json_refs'
 # Rspec for testing
 gem 'factory_bot_rails' # Factories!
 gem 'rspec-rails'
+gem 'faker'
+
+gem 'byebug', platform: :mri
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"

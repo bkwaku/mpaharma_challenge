@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2022_01_29_161316) do
     t.string "title", limit: 200
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["code"], name: "index_categories_on_code", unique: true
   end
 
 end
