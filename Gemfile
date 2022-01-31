@@ -42,9 +42,11 @@ gem 'json_refs'
 gem 'grape_on_rails_routes'
 gem 'kaminari', '~> 1.2.1'
 gem 'api-pagination'
+gem 'activerecord-import' # Performance-minded batch in/up-serts
 
 # upload
 gem 'cloudinary'
+gem 'csv'
 
 # logging
 gem 'grape_logging'

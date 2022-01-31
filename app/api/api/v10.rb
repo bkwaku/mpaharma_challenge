@@ -8,6 +8,7 @@ module Api
 
     mount ::Api::V10::CategoriesApi
     mount ::Api::V10::DiagnosisApi
+    mount ::Api::V10::CsvApi
 
   end
 end

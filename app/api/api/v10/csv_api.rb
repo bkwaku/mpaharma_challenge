@@ -11,7 +11,7 @@ module Api
           end
 
           def csv_repo
-            @csv ||= CSVRepo.new
+            @csv ||= CsvRepo.new
           end
         end
 
@@ -21,8 +21,9 @@ module Api
         end
 
         post do
+          content_type :txt
 
-          csv_repo.create(declared_params)
+          csv_repo.upload(params[:file][:tempfile])
 
           status 204
         end
