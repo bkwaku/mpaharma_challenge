@@ -43,6 +43,9 @@ gem 'grape_on_rails_routes'
 gem 'kaminari', '~> 1.2.1'
 gem 'api-pagination'
 
+# upload
+gem 'cloudinary'
+
 # logging
 gem 'grape_logging'
 gem 'lograge'
