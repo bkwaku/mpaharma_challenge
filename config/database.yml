@@ -8,12 +8,13 @@ default: &default
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
+  host: db
 
 development:
   <<: *default
   database: mpharma_development
-  username: <%= Rails.application.credentials.dig(:development, :postgres_username) %>
-  password: <%= Rails.application.credentials.dig(:development, :postgres_password) %>
+  username: postgres
+  password: password
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

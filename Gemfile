@@ -45,7 +45,6 @@ gem 'api-pagination'
 gem 'activerecord-import' # Performance-minded batch in/up-serts
 
 # upload
-gem 'cloudinary'
 gem 'csv'
 
 # logging
