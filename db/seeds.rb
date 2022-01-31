@@ -7,3 +7,4 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 load 'db/seeds/create_categories.rb'
+load 'db/seeds/create_diagnosis.rb'
