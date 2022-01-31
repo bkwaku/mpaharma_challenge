@@ -10,6 +10,7 @@
 .idea
 /.idea/*
 .byebug_history
+.env
 
 # Ignore bundler config.
 /.bundle

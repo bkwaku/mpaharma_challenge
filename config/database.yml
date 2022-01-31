@@ -13,8 +13,8 @@ default: &default
 development:
   <<: *default
   database: mpharma_development
-  username: postgres
-  password: password
+  username: <%= Rails.application.credentials.dig(:development, :postgres_username) %>
+  password: <%= Rails.application.credentials.dig(:development, :postgres_password) %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -22,6 +22,8 @@ development:
 test:
   <<: *default
   database: mpharma_test
+  username: <%= Rails.application.credentials.dig(:development, :postgres_username) %>
+  password: <%= Rails.application.credentials.dig(:development, :postgres_password) %>
 
 production:
   <<: *default
