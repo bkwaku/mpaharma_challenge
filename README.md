@@ -4,9 +4,10 @@ This is an app that can be used to store diagnosis codes for various diseases. A
 ## Instructions on setting the application up.
 1. Clone the application to your local machine.
 2. From your terminal, navigate to the application folder.
-3. Run `docker-compose down` in your terminal
-3. Run `docker-compose build` in your terminal
-4. Run `docker-compose up` in your terminal
+3. Create a `.env` file that would contain your `POSTGRES_USER` and `POSTGRES_PASSWORD`
+4. Run `docker-compose down` in your terminal
+5. Run `docker-compose build` in your terminal
+6. Run `docker-compose up` in your terminal
 
 ## Running the application
 1. You can use Postman to test the endpoints when the application is up and running.
