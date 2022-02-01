@@ -21,11 +21,13 @@ module Api
         end
 
         post do
-          content_type :txt
+          if params[:file][:type] != 'text/csv'
+            { 'error': 'Please upload a csv file' }
+          else
+            csv_repo.upload(params[:file][:tempfile])
 
-          csv_repo.upload(params[:file][:tempfile])
-
-          status 204
+            status 201
+          end
         end
       end
     end
